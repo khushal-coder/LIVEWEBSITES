@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array traversing</title>
+    <script>
+
+        let data=[9,45,2,8,45,23,7,78,0,11,41,77];
+        // for(i=0;i<data.length;i++){
+        //     document.write(`Array ${i} is ${data[i]} <br>`)
+        // }//TO PRINT EACH ELEMENT
+        function getElement(){
+          var a =  document.getElementById('element').value;
+          if(a >= 0 && a < data.length && !isNaN(a) && parseInt(a) === parseFloat(a)) {// in order to check number type , a decimal number negative numbers and in range indexes 
+            document.write(`YOUR ANSWER IS ${data[a]}`)//parseint -- surpasses an string into a number if not a number then returns NaN
+            //parsefloat--return floating point values (decimals ) from a string 
+          }
+          else{
+            document.write('INVALID INDEX ')
+          }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" id="element">
+    <button onclick="getElement()">GET ELEMENT</button>
+</body>
+</html>

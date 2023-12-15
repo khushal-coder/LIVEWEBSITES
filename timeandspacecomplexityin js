@@ -1,0 +1,29 @@
+# Algorithm Complexity:
+
+# Definition: The term "algorithm complexity" refers to the overall efficiency of an algorithm. It is a broad concept that encompasses both time 
+#and space complexities.it is a step by step guide 
+# Purpose: It provides a high-level understanding of how an algorithm's performance scales with input size.(how much line of code written as well as
+#  the number of time loops executed)
+
+
+# Time Complexity:
+
+# Definition: Time complexity is a measure of the amount of time an algorithm takes to complete as a function of the input size.(no. of lines writtwn
+#+code executed)
+# Notation: It is often expressed using Big O notation.
+# Example: If an algorithm has a time complexity of O(n), it means the time taken by the algorithm grows linearly with the size of the input.
+
+
+
+# Space Complexity:
+# Definition: Space complexity is a measure of the amount of memory an algorithm uses as a function of the input size.
+# Notation: Similar to time complexity, it is often expressed using Big O notation.
+# Example: If an algorithm has a space complexity of O(n), it means the amount of memory used by the algorithm grows linearly with the size of the input.
+# Big O Notation:
+
+# Definition: Big O notation is a mathematical notation that describes the growth rate of an algorithm's time or space complexity.
+# Examples:
+# O(1): Constant time complexity.
+# O(log n): Logarithmic time complexity.
+# O(n): Linear time complexity.
+# O(n^2): Quadratic time complexity.

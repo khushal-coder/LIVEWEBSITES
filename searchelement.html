@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="i1" placeholder="enter element">
+    <button onclick="searchElement()">SUBMIT</button>
+    
+    <script>
+        // let data = [24, 22, 45, 3, 34, 4 ,45];
+    
+        // function searchElement() {
+        //     let element = parseInt(document.getElementById('i1').value);
+        //     let index = undefined; // Initialize to -1, indicating not found
+    
+        //     for (let i = 0; i < data.length; i++) {
+        //         if (data[i] === element) {
+        //             index = i; // Assign the index where the element is found
+        //              // Exit the loop once the element is found
+        //         }
+        //     }
+    
+        //     if (index !== undefined) {
+        //         document.write('Element ' + element + ' found at index ' + index);
+        //     } else {
+        //         document.write('Element ' + element + ' not found in the array');
+        //     }
+        // }
+
+// for two repeating elements 
+    let data = [24, 22, 45, 3, 34, 4, 22];
+
+    function searchElement() {
+        let element = parseInt(document.getElementById('i1').value);
+        let indices = []; // Initialize an array to store indices
+
+        for (let i = 0; i < data.length; i++) {
+            if (data[i] === element) {
+                indices.push(i); // Store the index where the element is found
+            }
+        }
+
+        if (indices.length > 0) {// talking about length and not the index 
+            document.write('Element ' + element + ' found at indices: ' + indices.join(', '));// basically for formatting concatenation and for spaces
+        } else {
+            document.write('Element ' + element + ' not found in the array');
+        }
+    }
+
+
+    
+
+    </script>
+</body>
+</html>

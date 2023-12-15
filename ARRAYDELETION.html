@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="i1" placeholder="enter the element">
+    <button onclick="deleteElement()">SUBMIT </button>
+    <script>
+        let data=[24,223,22,545,767,87]
+
+
+        // function deleteElement(){
+        // let position=parseInt(document.getElementById('i1').value);
+        // if(position < 0 || position >= data.length || isNaN(position)){
+        //     document.write('ENTER THE CORRECT POSITION')
+        // }
+        
+        // else{
+        //     document.write('THE OLD ARRAY IS : '+data +'<br>' )
+        // for(let i=position; i<data.length; i++){
+        //     data[i]=data[i+1];// shifting values to left 
+        // }
+        // data.length=data.length-1;
+        // document.write('THE NEW ARRAY IS :' +data)}}
+
+
+
+
+
+        // deleting directly by element
+
+        function deleteElement(){
+            let element=parseInt(document.getElementById('i1').value);
+           let found=false;
+            for (let value of data) {
+        if (value === element) {
+            found = true;
+            break;// in order to exit the loop if find out 
+        }
+    }
+
+    if (!found || isNaN(element)) {
+        document.write('ENTER THE CORRECT ELEMENT');
+    }
+
+ else{
+            document.write('THE OLD ARRAY IS : '+data +'<br>' )
+            let index=data.indexOf(element);
+            
+        for(let i=index; i<data.length; i++){
+            data[i]=data[i+1];// shifting values to left 
+        }
+        data.length=data.length-1;
+        document.write('THE NEW ARRAY IS :' +data)}}
+    </script>
+</body>
+</html>

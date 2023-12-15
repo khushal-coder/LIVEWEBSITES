@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <input type="text" id="i1" placeholder="enter the new element">
+    <input type="text" id="i2" placeholder="enter the index">
+    <button onclick="insertElement()" type="button">INSERT </button>
+    <script>
+        let arr=[45,3,25,33,20]
+
+function insertElement()
+
+{       
+     let newEl= (document.getElementById('i1').value);
+        let index=parseInt(document.getElementById('i2').value);
+
+        if(index < 0 || index>=arr.length || isNaN(index)){
+                document.write("ENTER THE CORRECT INPUT")
+            }
+            
+            else{
+                document.write('THE OLD ARRAY IS:' +arr + '<br>')
+            for(let i=arr.length-1; i>=0;i--){
+    
+             if(i>=index){
+             arr[i+1]=arr[i];
+             if(i==index) {
+                arr[i]=newEl
+             }
+                  }}
+                
+         document.write('THE NEW ARRAY IS :' +arr)}}
+              
+        
+
+
+    </script>
+ </body>
+ </html>
